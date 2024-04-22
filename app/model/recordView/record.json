@@ -1,0 +1,3247 @@
+[
+    {
+      "capabilities": "customMediaPorts|absoluteTimestamps|multicastStreaming|isOnvif",
+      "credentials": {
+        "password": "Js@152604",
+        "user": "admin"
+      },
+      "deviceType": "Camera",
+      "id": "{0f535272-f810-40d7-b47e-a6da2b284540}",
+      "isLicenseUsed": true,
+      "mac": "00-0F-7C-17-5E-88",
+      "model": "Z34",
+      "motion": {
+        "mask": "5,0,0,44,32",
+        "type": "software"
+      },
+      "name": "Z34",
+      "options": {
+        "dewarpingParams": "{\"cameraProjection\":\"equidistant\",\"enabled\":false,\"fovRot\":0,\"hStretch\":1,\"radius\":0.5,\"sphereAlpha\":0,\"sphereBeta\":0,\"viewMode\":\"ceiling\",\"xCenter\":0.5,\"yCenter\":0.5}",
+        "preferredServerId": "{c143aa3f-a3b7-9731-e4b9-b6903536e995}"
+      },
+      "parameters": {
+        "DeviceUrl": "http://10.13.10.107:80/onvif/device_service",
+        "availableProfiles": [
+          {
+            "name": "media_profile1",
+            "state": "primaryDefault",
+            "token": "media_profile1"
+          },
+          {
+            "name": "media_profile2",
+            "state": "secondaryDefault",
+            "token": "media_profile2"
+          },
+          {
+            "name": "media_profile3",
+            "state": "none",
+            "token": "media_profile3"
+          }
+        ],
+        "bitrateInfos": {
+          "streams": [
+            {
+              "actualBitrate": 4.295851707458496,
+              "actualFps": 14.89847183227539,
+              "avarageBitrateMbps": 3.10272216796875,
+              "averageGopSize": 149,
+              "bitrateFactor": 1,
+              "encoderIndex": "primary",
+              "fps": 14,
+              "isConfigured": true,
+              "numberOfChannels": 1,
+              "rawSuggestedBitrate": 7.3837890625,
+              "resolution": "2592x1520",
+              "suggestedBitrate": 4.295851707458496,
+              "timestamp": "2024-03-27T12:14:50Z"
+            },
+            {
+              "actualBitrate": 0.24655628204345703,
+              "actualFps": 7.001185417175293,
+              "avarageBitrateMbps": 0.2660064697265625,
+              "averageGopSize": 23.66666603088379,
+              "bitrateFactor": 1,
+              "encoderIndex": "secondary",
+              "fps": 7,
+              "isConfigured": true,
+              "numberOfChannels": 1,
+              "rawSuggestedBitrate": 0.751953125,
+              "resolution": "704x576",
+              "suggestedBitrate": 0.24655628204345703,
+              "timestamp": "2024-03-27T12:17:17Z"
+            }
+          ]
+        },
+        "compatibleAnalyticsEngines": [
+          "{9537fc21-e0b1-3ca8-424f-385cf4e9a45a}"
+        ],
+        "driverClass": "nx::vms::server::plugins::onvif::Resource",
+        "firmware": "IPC_D1202-B0007P35D1904C70",
+        "hasDualStreaming": 1,
+        "keepCameraTimeSettings": 1,
+        "mediaCapabilities": {
+          "streamCapabilities": [
+            {
+              "key": "primary",
+              "value": {
+                "defaultFps": 20,
+                "maxBitrateKbps": 7449,
+                "maxFps": 20,
+                "minBitrateKbps": 192
+              }
+            },
+            {
+              "key": "secondary",
+              "value": {
+                "defaultFps": 20,
+                "maxBitrateKbps": 1517,
+                "maxFps": 20,
+                "minBitrateKbps": 192
+              }
+            }
+          ]
+        },
+        "mediaStreams": {
+          "streams": [
+            {
+              "codec": 27,
+              "resolution": "2592x1520",
+              "transports": [
+                "rtsp",
+                "hls"
+              ]
+            },
+            {
+              "codec": 27,
+              "encoderIndex": 1,
+              "resolution": "704x576",
+              "transports": [
+                "rtsp",
+                "hls"
+              ]
+            },
+            {
+              "encoderIndex": -1,
+              "resolution": "*",
+              "transcodingRequired": true,
+              "transports": [
+                "rtsp",
+                "mjpeg",
+                "webm"
+              ]
+            }
+          ]
+        },
+        "motionStream": "secondary",
+        "streamUrls": {
+          "1": "rtsp://10.13.10.107/media/video1",
+          "2": "rtsp://10.13.10.107/media/video2"
+        },
+        "useMedia2ToFetchProfiles": "autoSelect"
+      },
+      "physicalId": "00-0F-7C-17-5E-88",
+      "schedule": {
+        "isEnabled": true,
+        "maxArchiveDays": -30,
+        "maxArchivePeriodS": -2592000,
+        "minArchiveDays": -1,
+        "minArchivePeriodS": -86400,
+        "tasks": [
+          {
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "normal"
+          },
+          {
+            "dayOfWeek": 2,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "normal"
+          },
+          {
+            "dayOfWeek": 3,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "normal"
+          },
+          {
+            "dayOfWeek": 4,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "normal"
+          },
+          {
+            "dayOfWeek": 5,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "normal"
+          },
+          {
+            "dayOfWeek": 6,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "normal"
+          },
+          {
+            "dayOfWeek": 7,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "normal"
+          }
+        ]
+      },
+      "serverId": "{c143aa3f-a3b7-9731-e4b9-b6903536e995}",
+      "status": "Recording",
+      "typeId": "{9a55ee6b-a595-5807-a5ba-d4aff697dc12}",
+      "url": "http://10.13.10.107:80/onvif/device_service",
+      "vendor": "ACTi"
+    },
+    {
+      "capabilities": "inputPort|outputPort|audioTransmit|remoteArchive|customMediaPorts|absoluteTimestamps|multicastStreaming|isOnvif",
+      "credentials": {
+        "password": "Js!152604",
+        "user": "service"
+      },
+      "deviceType": "Camera",
+      "id": "{1839f6ea-00eb-80fd-5887-b6c79e28e1ca}",
+      "isLicenseUsed": true,
+      "mac": "00-07-5F-D2-F4-4A",
+      "model": "FLEXIDOME_outdoor_5100i_IR",
+      "motion": {
+        "mask": "5,0,0,44,32",
+        "type": "software"
+      },
+      "name": "BoschFLEXIDOME_outdoor_5100i_IR",
+      "options": {
+        "dewarpingParams": "{\"cameraProjection\":\"equidistant\",\"enabled\":false,\"fovRot\":0,\"hStretch\":1,\"radius\":0.5,\"sphereAlpha\":0,\"sphereBeta\":0,\"viewMode\":\"ceiling\",\"xCenter\":0.5,\"yCenter\":0.5}",
+        "preferredServerId": "{c143aa3f-a3b7-9731-e4b9-b6903536e995}"
+      },
+      "parameters": {
+        "DeviceUrl": "https://10.13.10.54/onvif/device_service",
+        "availableProfiles": [
+          {
+            "name": "Profile_L1S1",
+            "state": "primaryDefault",
+            "token": "0"
+          },
+          {
+            "name": "Profile_L1S2",
+            "state": "secondaryDefault",
+            "token": "1"
+          },
+          {
+            "name": "Profile_L1S3",
+            "state": "none",
+            "token": "2"
+          },
+          {
+            "name": "Profile_L1S4",
+            "state": "none",
+            "token": "3"
+          }
+        ],
+        "bitrateInfos": {
+          "streams": [
+            {
+              "actualBitrate": 0.5217075347900391,
+              "actualFps": 14.997735977172852,
+              "avarageBitrateMbps": 1.0231475830078125,
+              "averageGopSize": 30,
+              "bitrateFactor": 1,
+              "encoderIndex": "primary",
+              "fps": 14,
+              "isConfigured": true,
+              "numberOfChannels": 1,
+              "rawSuggestedBitrate": 4.7109375,
+              "resolution": "1920x1080",
+              "suggestedBitrate": 0.5217075347900391,
+              "timestamp": "2024-03-23T14:59:07Z"
+            },
+            {
+              "actualBitrate": 0.040248870849609375,
+              "actualFps": 5.99891471862793,
+              "avarageBitrateMbps": 0.1695098876953125,
+              "averageGopSize": 30,
+              "bitrateFactor": 1,
+              "encoderIndex": "secondary",
+              "fps": 5,
+              "isConfigured": true,
+              "numberOfChannels": 1,
+              "rawSuggestedBitrate": 0.2646484375,
+              "resolution": "512x288",
+              "suggestedBitrate": 0.1875,
+              "timestamp": "2024-03-23T15:01:47Z"
+            }
+          ]
+        },
+        "compatibleAnalyticsEngines": [
+          "{9537fc21-e0b1-3ca8-424f-385cf4e9a45a}",
+          "{e6cd6b79-4916-2b83-75e3-5e4fb87a34f5}"
+        ],
+        "deviceAgentManifests": [
+          {
+            "key": "{9537fc21-e0b1-3ca8-424f-385cf4e9a45a}",
+            "value": {
+              "capabilities": "noCapabilities",
+              "deviceAgentSettingsModel": null,
+              "eventTypes": [
+                {
+                  "id": "nx.openvino_object_detection.personDetected",
+                  "name": "Person Detected"
+                },
+                {
+                  "id": "nx.openvino_object_detection.personLost",
+                  "name": "Person Lost"
+                },
+                {
+                  "flags": "stateDependent",
+                  "id": "nx.openvino_object_detection.peopleDetected",
+                  "name": "People Detected"
+                },
+                {
+                  "id": "nx.openvino_object_detection.lineCrossed",
+                  "name": "Line Crossed"
+                },
+                {
+                  "id": "nx.openvino_object_detection.areaCrossed",
+                  "name": "Area Crossed"
+                },
+                {
+                  "id": "nx.openvino_object_detection.areaEntranceDetected",
+                  "name": "Area Entrance"
+                },
+                {
+                  "id": "nx.openvino_object_detection.areaExitDetected",
+                  "name": "Area Exit"
+                },
+                {
+                  "id": "nx.openvino_object_detection.appearanceInAreaDetected",
+                  "name": "Appearance in Area"
+                },
+                {
+                  "id": "nx.openvino_object_detection.disappearanceInAreaDetected",
+                  "name": "Disappearance in Area"
+                },
+                {
+                  "flags": "stateDependent",
+                  "id": "nx.openvino_object_detection.loiteringDetected",
+                  "name": "Loitering"
+                }
+              ],
+              "objectTypes": [
+                {
+                  "id": "nx.openvino_object_detection.person",
+                  "name": "Person"
+                }
+              ]
+            }
+          },
+          {
+            "key": "{e6cd6b79-4916-2b83-75e3-5e4fb87a34f5}",
+            "value": {
+              "capabilities": "disableStreamSelection",
+              "deviceAgentSettingsModel": null,
+              "supportedEventTypeIds": [
+                "nx.bosch.Detect_any_object",
+                "nx.bosch.IVA.Intrusion.Left_to_right",
+                "nx.bosch.IVA.Intrusion.Objekt_in_Field_1",
+                "nx.bosch.IVA.Intrusion.Right_to_left",
+                "nx.bosch.IVA.LineCrossing",
+                "nx.bosch.IVA.TrafficIncidents.Dropped_object",
+                "nx.bosch.IVA.TrafficIncidents.Pedestrian",
+                "nx.bosch.IVA.TrafficIncidents.Slow_vehicle",
+                "nx.bosch.IVA.TrafficIncidents.Stopped_vehicle",
+                "nx.bosch.IVA.TrafficIncidents.Wrong_way",
+                "nx.bosch.GlobalChange",
+                "nx.bosch.SignalTooBright",
+                "nx.bosch.SignalTooDark"
+              ],
+              "supportedTypes": [
+                {
+                  "objectTypeId": "nx.base.Unknown"
+                },
+                {
+                  "attributes": [
+                    "Speed"
+                  ],
+                  "objectTypeId": "nx.base.Vehicle"
+                },
+                {
+                  "objectTypeId": "nx.base.Person"
+                },
+                {
+                  "objectTypeId": "nx.base.Face"
+                },
+                {
+                  "attributes": [
+                    "Speed"
+                  ],
+                  "objectTypeId": "nx.base.Car"
+                },
+                {
+                  "attributes": [
+                    "Speed"
+                  ],
+                  "objectTypeId": "nx.base.Bike"
+                },
+                {
+                  "attributes": [
+                    "Speed"
+                  ],
+                  "objectTypeId": "nx.base.Truck"
+                },
+                {
+                  "attributes": [
+                    "Speed",
+                    "Geo.Latitude",
+                    "Geo.Longitude",
+                    "Geo.Elevation"
+                  ],
+                  "objectTypeId": "nx.bosch.Human"
+                },
+                {
+                  "attributes": [
+                    "Speed",
+                    "Geo.Latitude",
+                    "Geo.Longitude",
+                    "Geo.Elevation"
+                  ],
+                  "objectTypeId": "nx.bosch.Face"
+                },
+                {
+                  "attributes": [
+                    "Speed",
+                    "Geo.Latitude",
+                    "Geo.Longitude",
+                    "Geo.Elevation"
+                  ],
+                  "objectTypeId": "nx.bosch.Vehicle"
+                },
+                {
+                  "attributes": [
+                    "Speed",
+                    "Geo.Latitude",
+                    "Geo.Longitude",
+                    "Geo.Elevation"
+                  ],
+                  "objectTypeId": "nx.bosch.Head"
+                },
+                {
+                  "attributes": [
+                    "Speed",
+                    "Geo.Latitude",
+                    "Geo.Longitude",
+                    "Geo.Elevation"
+                  ],
+                  "objectTypeId": "nx.bosch.Group"
+                },
+                {
+                  "attributes": [
+                    "Speed",
+                    "Geo.Latitude",
+                    "Geo.Longitude",
+                    "Geo.Elevation"
+                  ],
+                  "objectTypeId": "nx.bosch.SmallObject"
+                },
+                {
+                  "attributes": [
+                    "Speed",
+                    "Geo.Latitude",
+                    "Geo.Longitude",
+                    "Geo.Elevation"
+                  ],
+                  "objectTypeId": "nx.bosch.Fire"
+                },
+                {
+                  "attributes": [
+                    "Speed",
+                    "Geo.Latitude",
+                    "Geo.Longitude",
+                    "Geo.Elevation"
+                  ],
+                  "objectTypeId": "nx.bosch.Smoke"
+                },
+                {
+                  "attributes": [
+                    "Speed",
+                    "Geo.Latitude",
+                    "Geo.Longitude",
+                    "Geo.Elevation"
+                  ],
+                  "objectTypeId": "nx.bosch.Car"
+                },
+                {
+                  "attributes": [
+                    "Speed",
+                    "Geo.Latitude",
+                    "Geo.Longitude",
+                    "Geo.Elevation"
+                  ],
+                  "objectTypeId": "nx.bosch.Bike"
+                },
+                {
+                  "attributes": [
+                    "Speed",
+                    "Geo.Latitude",
+                    "Geo.Longitude",
+                    "Geo.Elevation"
+                  ],
+                  "objectTypeId": "nx.bosch.Truck"
+                },
+                {
+                  "attributes": [
+                    "Speed",
+                    "Geo.Latitude",
+                    "Geo.Longitude",
+                    "Geo.Elevation"
+                  ],
+                  "objectTypeId": "nx.bosch.ObjectDetection.AnyObject"
+                }
+              ]
+            }
+          }
+        ],
+        "deviceAgentsSettingsValuesProperty": [
+          {
+            "key": "{9537fc21-e0b1-3ca8-424f-385cf4e9a45a}",
+            "value": {
+              "area10DetectionSensitivity": 50,
+              "area10DetectionsEnabled": [
+                "area10EntranceDetectionEnabled",
+                "area10ExitDetectionEnabled",
+                "area10AppearanceDetectionEnabled",
+                "area10DisappearanceDetectionEnabled",
+                "area10LoiteringDetectionEnabled",
+                "area10CrossingEnabled"
+              ],
+              "area10LoiteringDetectionDuration": 10,
+              "area10Polygon": {
+                "figure": null
+              },
+              "area1DetectionSensitivity": 50,
+              "area1DetectionsEnabled": [
+                "area1EntranceDetectionEnabled",
+                "area1ExitDetectionEnabled",
+                "area1AppearanceDetectionEnabled",
+                "area1DisappearanceDetectionEnabled",
+                "area1LoiteringDetectionEnabled",
+                "area1CrossingEnabled"
+              ],
+              "area1LoiteringDetectionDuration": 10,
+              "area1Polygon": {
+                "figure": null
+              },
+              "area2DetectionSensitivity": 50,
+              "area2DetectionsEnabled": [
+                "area2EntranceDetectionEnabled",
+                "area2ExitDetectionEnabled",
+                "area2AppearanceDetectionEnabled",
+                "area2DisappearanceDetectionEnabled",
+                "area2LoiteringDetectionEnabled",
+                "area2CrossingEnabled"
+              ],
+              "area2LoiteringDetectionDuration": 10,
+              "area2Polygon": {
+                "figure": null
+              },
+              "area3DetectionSensitivity": 50,
+              "area3DetectionsEnabled": [
+                "area3EntranceDetectionEnabled",
+                "area3ExitDetectionEnabled",
+                "area3AppearanceDetectionEnabled",
+                "area3DisappearanceDetectionEnabled",
+                "area3LoiteringDetectionEnabled",
+                "area3CrossingEnabled"
+              ],
+              "area3LoiteringDetectionDuration": 10,
+              "area3Polygon": {
+                "figure": null
+              },
+              "area4DetectionSensitivity": 50,
+              "area4DetectionsEnabled": [
+                "area4EntranceDetectionEnabled",
+                "area4ExitDetectionEnabled",
+                "area4AppearanceDetectionEnabled",
+                "area4DisappearanceDetectionEnabled",
+                "area4LoiteringDetectionEnabled",
+                "area4CrossingEnabled"
+              ],
+              "area4LoiteringDetectionDuration": 10,
+              "area4Polygon": {
+                "figure": null
+              },
+              "area5DetectionSensitivity": 50,
+              "area5DetectionsEnabled": [
+                "area5EntranceDetectionEnabled",
+                "area5ExitDetectionEnabled",
+                "area5AppearanceDetectionEnabled",
+                "area5DisappearanceDetectionEnabled",
+                "area5LoiteringDetectionEnabled",
+                "area5CrossingEnabled"
+              ],
+              "area5LoiteringDetectionDuration": 10,
+              "area5Polygon": {
+                "figure": null
+              },
+              "area6DetectionSensitivity": 50,
+              "area6DetectionsEnabled": [
+                "area6EntranceDetectionEnabled",
+                "area6ExitDetectionEnabled",
+                "area6AppearanceDetectionEnabled",
+                "area6DisappearanceDetectionEnabled",
+                "area6LoiteringDetectionEnabled",
+                "area6CrossingEnabled"
+              ],
+              "area6LoiteringDetectionDuration": 10,
+              "area6Polygon": {
+                "figure": null
+              },
+              "area7DetectionSensitivity": 50,
+              "area7DetectionsEnabled": [
+                "area7EntranceDetectionEnabled",
+                "area7ExitDetectionEnabled",
+                "area7AppearanceDetectionEnabled",
+                "area7DisappearanceDetectionEnabled",
+                "area7LoiteringDetectionEnabled",
+                "area7CrossingEnabled"
+              ],
+              "area7LoiteringDetectionDuration": 10,
+              "area7Polygon": {
+                "figure": null
+              },
+              "area8DetectionSensitivity": 50,
+              "area8DetectionsEnabled": [
+                "area8EntranceDetectionEnabled",
+                "area8ExitDetectionEnabled",
+                "area8AppearanceDetectionEnabled",
+                "area8DisappearanceDetectionEnabled",
+                "area8LoiteringDetectionEnabled",
+                "area8CrossingEnabled"
+              ],
+              "area8LoiteringDetectionDuration": 10,
+              "area8Polygon": {
+                "figure": null
+              },
+              "area9DetectionSensitivity": 50,
+              "area9DetectionsEnabled": [
+                "area9EntranceDetectionEnabled",
+                "area9ExitDetectionEnabled",
+                "area9AppearanceDetectionEnabled",
+                "area9DisappearanceDetectionEnabled",
+                "area9LoiteringDetectionEnabled",
+                "area9CrossingEnabled"
+              ],
+              "area9LoiteringDetectionDuration": 10,
+              "area9Polygon": {
+                "figure": null
+              },
+              "detectionFrequencyFps": 5,
+              "line10Polyline": {
+                "figure": null
+              },
+              "line1Polyline": {
+                "figure": null
+              },
+              "line2Polyline": {
+                "figure": null
+              },
+              "line3Polyline": {
+                "figure": null
+              },
+              "line4Polyline": {
+                "figure": null
+              },
+              "line5Polyline": {
+                "figure": null
+              },
+              "line6Polyline": {
+                "figure": null
+              },
+              "line7Polyline": {
+                "figure": null
+              },
+              "line8Polyline": {
+                "figure": null
+              },
+              "line9Polyline": {
+                "figure": null
+              },
+              "minDetectionConfidence": 75,
+              "minIntervalBetweenTracks": 5,
+              "threadCount": 4
+            }
+          },
+          {
+            "key": "{e6cd6b79-4916-2b83-75e3-5e4fb87a34f5}"
+          }
+        ],
+        "driverClass": "nx::vms::server::plugins::onvif::Resource",
+        "firmware": "8.80.0090",
+        "hasDualStreaming": 1,
+        "ioSettings": [
+          {
+            "iDefaultState": "Open Circuit",
+            "id": "Output_1",
+            "oDefaultState": "Open Circuit",
+            "outputName": "Output Output_1",
+            "portType": "Output",
+            "supportedPortTypes": "Unknown"
+          },
+          {
+            "iDefaultState": "Open Circuit",
+            "id": "1",
+            "inputName": "Input 1",
+            "oDefaultState": "Open Circuit",
+            "portType": "Input",
+            "supportedPortTypes": "Unknown"
+          }
+        ],
+        "isAudioSupported": 1,
+        "keepCameraTimeSettings": 1,
+        "mediaCapabilities": {
+          "streamCapabilities": [
+            {
+              "key": "primary",
+              "value": {
+                "defaultFps": 30,
+                "maxBitrateKbps": 7130,
+                "maxFps": 30,
+                "minBitrateKbps": 192
+              }
+            },
+            {
+              "key": "secondary",
+              "value": {
+                "defaultFps": 30,
+                "maxBitrateKbps": 1121,
+                "maxFps": 30,
+                "minBitrateKbps": 192
+              }
+            }
+          ]
+        },
+        "mediaStreams": {
+          "streams": [
+            {
+              "codec": 27,
+              "resolution": "1920x1080",
+              "transports": [
+                "rtsp",
+                "hls"
+              ]
+            },
+            {
+              "codec": 27,
+              "encoderIndex": 1,
+              "resolution": "512x288",
+              "transports": [
+                "rtsp",
+                "hls"
+              ]
+            },
+            {
+              "encoderIndex": -1,
+              "resolution": "*",
+              "transcodingRequired": true,
+              "transports": [
+                "rtsp",
+                "mjpeg",
+                "webm"
+              ]
+            }
+          ]
+        },
+        "motionStream": "secondary",
+        "streamUrls": {
+          "1": "rtsp://10.13.10.54/rtsp_tunnel?p=0&line=1&inst=1&aon=1&aud=1&vcd=2",
+          "2": "rtsp://10.13.10.54/rtsp_tunnel?p=1&line=1&inst=2&aon=1&aud=1&vcd=2"
+        },
+        "useMedia2ToFetchProfiles": "autoSelect"
+      },
+      "physicalId": "urn_uuid_00075fd2-f44a-4af4-d25f-0700075fd25f",
+      "schedule": {
+        "isEnabled": true,
+        "maxArchiveDays": -30,
+        "maxArchivePeriodS": -2592000,
+        "minArchiveDays": -1,
+        "minArchivePeriodS": -86400,
+        "tasks": [
+          {
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "normal"
+          },
+          {
+            "dayOfWeek": 2,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "normal"
+          },
+          {
+            "dayOfWeek": 3,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "normal"
+          },
+          {
+            "dayOfWeek": 4,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "normal"
+          },
+          {
+            "dayOfWeek": 5,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "normal"
+          },
+          {
+            "dayOfWeek": 6,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "normal"
+          },
+          {
+            "dayOfWeek": 7,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "normal"
+          }
+        ]
+      },
+      "serverId": "{c143aa3f-a3b7-9731-e4b9-b6903536e995}",
+      "status": "Recording",
+      "typeId": "{9a55ee6b-a595-5807-a5ba-d4aff697dc12}",
+      "url": "https://10.13.10.54/onvif/device_service",
+      "vendor": "Bosch"
+    },
+    {
+      "capabilities": "inputPort|outputPort|audioTransmit|remoteArchive|customMediaPorts|absoluteTimestamps|multicastStreaming|isOnvif",
+      "credentials": {
+        "password": "Js!152604",
+        "user": "service"
+      },
+      "deviceType": "Camera",
+      "id": "{18561d70-32c0-1abc-0a91-cd9f83306540}",
+      "isLicenseUsed": true,
+      "mac": "00-07-5F-DD-FF-C7",
+      "model": "FLEXIDOME_panoramic_5100i_IR",
+      "motion": {
+        "mask": "5,0,0,44,32",
+        "type": "software"
+      },
+      "name": "BoschFLEXIDOME_panoramic_5100i_IR",
+      "options": {
+        "dewarpingParams": "{\"cameraProjection\":\"equidistant\",\"enabled\":true,\"fovRot\":0,\"hStretch\":1,\"radius\":0.5,\"sphereAlpha\":0,\"sphereBeta\":0,\"viewMode\":\"ceiling\",\"xCenter\":0.5,\"yCenter\":0.5}",
+        "isAudioEnabled": true,
+        "preferredServerId": "{c143aa3f-a3b7-9731-e4b9-b6903536e995}"
+      },
+      "parameters": {
+        "DeviceUrl": "https://10.13.10.60/onvif/device_service",
+        "audioCodec": "PCM",
+        "availableProfiles": [
+          {
+            "name": "Profile_L1S1",
+            "state": "primaryDefault",
+            "token": "0"
+          },
+          {
+            "name": "Profile_L1S2",
+            "state": "secondaryDefault",
+            "token": "1"
+          },
+          {
+            "name": "Profile_L1S3",
+            "state": "none",
+            "token": "2"
+          },
+          {
+            "name": "Profile_L1S4",
+            "state": "none",
+            "token": "3"
+          }
+        ],
+        "bitrateInfos": {
+          "streams": [
+            {
+              "actualBitrate": 3.7663822174072266,
+              "actualFps": 15.006169319152832,
+              "avarageBitrateMbps": 3.7609024047851562,
+              "averageGopSize": 10.066666603088379,
+              "bitrateFactor": 1,
+              "encoderIndex": "primary",
+              "fps": 15,
+              "isConfigured": true,
+              "numberOfChannels": 1,
+              "rawSuggestedBitrate": 14.1572265625,
+              "resolution": "3008x3008",
+              "suggestedBitrate": 3.7663822174072266,
+              "timestamp": "2024-03-22T09:51:49Z"
+            },
+            {
+              "actualBitrate": 0.04401969909667969,
+              "actualFps": 6.001140117645264,
+              "avarageBitrateMbps": 0.11652374267578125,
+              "averageGopSize": 30.5,
+              "bitrateFactor": 1,
+              "encoderIndex": "secondary",
+              "fps": 6,
+              "isConfigured": true,
+              "numberOfChannels": 1,
+              "rawSuggestedBitrate": 0.43359375,
+              "resolution": "480x480",
+              "suggestedBitrate": 0.1875,
+              "timestamp": "2024-03-22T09:58:01Z"
+            }
+          ]
+        },
+        "compatibleAnalyticsEngines": [
+          "{9537fc21-e0b1-3ca8-424f-385cf4e9a45a}",
+          "{e6cd6b79-4916-2b83-75e3-5e4fb87a34f5}"
+        ],
+        "deviceAgentManifests": [
+          {
+            "key": "{9537fc21-e0b1-3ca8-424f-385cf4e9a45a}",
+            "value": {
+              "capabilities": "noCapabilities",
+              "deviceAgentSettingsModel": null,
+              "eventTypes": [
+                {
+                  "id": "nx.openvino_object_detection.personDetected",
+                  "name": "Person Detected"
+                },
+                {
+                  "id": "nx.openvino_object_detection.personLost",
+                  "name": "Person Lost"
+                },
+                {
+                  "flags": "stateDependent",
+                  "id": "nx.openvino_object_detection.peopleDetected",
+                  "name": "People Detected"
+                },
+                {
+                  "id": "nx.openvino_object_detection.lineCrossed",
+                  "name": "Line Crossed"
+                },
+                {
+                  "id": "nx.openvino_object_detection.areaCrossed",
+                  "name": "Area Crossed"
+                },
+                {
+                  "id": "nx.openvino_object_detection.areaEntranceDetected",
+                  "name": "Area Entrance"
+                },
+                {
+                  "id": "nx.openvino_object_detection.areaExitDetected",
+                  "name": "Area Exit"
+                },
+                {
+                  "id": "nx.openvino_object_detection.appearanceInAreaDetected",
+                  "name": "Appearance in Area"
+                },
+                {
+                  "id": "nx.openvino_object_detection.disappearanceInAreaDetected",
+                  "name": "Disappearance in Area"
+                },
+                {
+                  "flags": "stateDependent",
+                  "id": "nx.openvino_object_detection.loiteringDetected",
+                  "name": "Loitering"
+                }
+              ],
+              "objectTypes": [
+                {
+                  "id": "nx.openvino_object_detection.person",
+                  "name": "Person"
+                }
+              ]
+            }
+          },
+          {
+            "key": "{e6cd6b79-4916-2b83-75e3-5e4fb87a34f5}",
+            "value": {
+              "capabilities": "disableStreamSelection",
+              "deviceAgentSettingsModel": null,
+              "supportedEventTypeIds": [
+                "nx.bosch.Detect_any_object",
+                "nx.bosch.IVA.Intrusion.Left_to_right",
+                "nx.bosch.IVA.Intrusion.Objekt_in_Field_1",
+                "nx.bosch.IVA.Intrusion.Right_to_left",
+                "nx.bosch.IVA.LineCrossing",
+                "nx.bosch.IVA.TrafficIncidents.Dropped_object",
+                "nx.bosch.IVA.TrafficIncidents.Pedestrian",
+                "nx.bosch.IVA.TrafficIncidents.Slow_vehicle",
+                "nx.bosch.IVA.TrafficIncidents.Stopped_vehicle",
+                "nx.bosch.IVA.TrafficIncidents.Wrong_way",
+                "nx.bosch.GlobalChange",
+                "nx.bosch.SignalTooBright",
+                "nx.bosch.SignalTooDark"
+              ],
+              "supportedTypes": [
+                {
+                  "objectTypeId": "nx.base.Unknown"
+                },
+                {
+                  "attributes": [
+                    "Speed"
+                  ],
+                  "objectTypeId": "nx.base.Vehicle"
+                },
+                {
+                  "objectTypeId": "nx.base.Person"
+                },
+                {
+                  "objectTypeId": "nx.base.Face"
+                },
+                {
+                  "attributes": [
+                    "Speed"
+                  ],
+                  "objectTypeId": "nx.base.Car"
+                },
+                {
+                  "attributes": [
+                    "Speed"
+                  ],
+                  "objectTypeId": "nx.base.Bike"
+                },
+                {
+                  "attributes": [
+                    "Speed"
+                  ],
+                  "objectTypeId": "nx.base.Truck"
+                },
+                {
+                  "attributes": [
+                    "Speed",
+                    "Geo.Latitude",
+                    "Geo.Longitude",
+                    "Geo.Elevation"
+                  ],
+                  "objectTypeId": "nx.bosch.Human"
+                },
+                {
+                  "attributes": [
+                    "Speed",
+                    "Geo.Latitude",
+                    "Geo.Longitude",
+                    "Geo.Elevation"
+                  ],
+                  "objectTypeId": "nx.bosch.Face"
+                },
+                {
+                  "attributes": [
+                    "Speed",
+                    "Geo.Latitude",
+                    "Geo.Longitude",
+                    "Geo.Elevation"
+                  ],
+                  "objectTypeId": "nx.bosch.Vehicle"
+                },
+                {
+                  "attributes": [
+                    "Speed",
+                    "Geo.Latitude",
+                    "Geo.Longitude",
+                    "Geo.Elevation"
+                  ],
+                  "objectTypeId": "nx.bosch.Head"
+                },
+                {
+                  "attributes": [
+                    "Speed",
+                    "Geo.Latitude",
+                    "Geo.Longitude",
+                    "Geo.Elevation"
+                  ],
+                  "objectTypeId": "nx.bosch.Group"
+                },
+                {
+                  "attributes": [
+                    "Speed",
+                    "Geo.Latitude",
+                    "Geo.Longitude",
+                    "Geo.Elevation"
+                  ],
+                  "objectTypeId": "nx.bosch.SmallObject"
+                },
+                {
+                  "attributes": [
+                    "Speed",
+                    "Geo.Latitude",
+                    "Geo.Longitude",
+                    "Geo.Elevation"
+                  ],
+                  "objectTypeId": "nx.bosch.Fire"
+                },
+                {
+                  "attributes": [
+                    "Speed",
+                    "Geo.Latitude",
+                    "Geo.Longitude",
+                    "Geo.Elevation"
+                  ],
+                  "objectTypeId": "nx.bosch.Smoke"
+                },
+                {
+                  "attributes": [
+                    "Speed",
+                    "Geo.Latitude",
+                    "Geo.Longitude",
+                    "Geo.Elevation"
+                  ],
+                  "objectTypeId": "nx.bosch.Car"
+                },
+                {
+                  "attributes": [
+                    "Speed",
+                    "Geo.Latitude",
+                    "Geo.Longitude",
+                    "Geo.Elevation"
+                  ],
+                  "objectTypeId": "nx.bosch.Bike"
+                },
+                {
+                  "attributes": [
+                    "Speed",
+                    "Geo.Latitude",
+                    "Geo.Longitude",
+                    "Geo.Elevation"
+                  ],
+                  "objectTypeId": "nx.bosch.Truck"
+                },
+                {
+                  "attributes": [
+                    "Speed",
+                    "Geo.Latitude",
+                    "Geo.Longitude",
+                    "Geo.Elevation"
+                  ],
+                  "objectTypeId": "nx.bosch.ObjectDetection.AnyObject"
+                }
+              ]
+            }
+          }
+        ],
+        "deviceAgentsSettingsValuesProperty": [
+          {
+            "key": "{9537fc21-e0b1-3ca8-424f-385cf4e9a45a}",
+            "value": {
+              "area10DetectionSensitivity": 50,
+              "area10DetectionsEnabled": [
+                "area10EntranceDetectionEnabled",
+                "area10ExitDetectionEnabled",
+                "area10AppearanceDetectionEnabled",
+                "area10DisappearanceDetectionEnabled",
+                "area10LoiteringDetectionEnabled",
+                "area10CrossingEnabled"
+              ],
+              "area10LoiteringDetectionDuration": 10,
+              "area10Polygon": {
+                "figure": null
+              },
+              "area1DetectionSensitivity": 50,
+              "area1DetectionsEnabled": [
+                "area1EntranceDetectionEnabled",
+                "area1ExitDetectionEnabled",
+                "area1AppearanceDetectionEnabled",
+                "area1DisappearanceDetectionEnabled",
+                "area1LoiteringDetectionEnabled",
+                "area1CrossingEnabled"
+              ],
+              "area1LoiteringDetectionDuration": 10,
+              "area1Polygon": {
+                "figure": null
+              },
+              "area2DetectionSensitivity": 50,
+              "area2DetectionsEnabled": [
+                "area2EntranceDetectionEnabled",
+                "area2ExitDetectionEnabled",
+                "area2AppearanceDetectionEnabled",
+                "area2DisappearanceDetectionEnabled",
+                "area2LoiteringDetectionEnabled",
+                "area2CrossingEnabled"
+              ],
+              "area2LoiteringDetectionDuration": 10,
+              "area2Polygon": {
+                "figure": null
+              },
+              "area3DetectionSensitivity": 50,
+              "area3DetectionsEnabled": [
+                "area3EntranceDetectionEnabled",
+                "area3ExitDetectionEnabled",
+                "area3AppearanceDetectionEnabled",
+                "area3DisappearanceDetectionEnabled",
+                "area3LoiteringDetectionEnabled",
+                "area3CrossingEnabled"
+              ],
+              "area3LoiteringDetectionDuration": 10,
+              "area3Polygon": {
+                "figure": null
+              },
+              "area4DetectionSensitivity": 50,
+              "area4DetectionsEnabled": [
+                "area4EntranceDetectionEnabled",
+                "area4ExitDetectionEnabled",
+                "area4AppearanceDetectionEnabled",
+                "area4DisappearanceDetectionEnabled",
+                "area4LoiteringDetectionEnabled",
+                "area4CrossingEnabled"
+              ],
+              "area4LoiteringDetectionDuration": 10,
+              "area4Polygon": {
+                "figure": null
+              },
+              "area5DetectionSensitivity": 50,
+              "area5DetectionsEnabled": [
+                "area5EntranceDetectionEnabled",
+                "area5ExitDetectionEnabled",
+                "area5AppearanceDetectionEnabled",
+                "area5DisappearanceDetectionEnabled",
+                "area5LoiteringDetectionEnabled",
+                "area5CrossingEnabled"
+              ],
+              "area5LoiteringDetectionDuration": 10,
+              "area5Polygon": {
+                "figure": null
+              },
+              "area6DetectionSensitivity": 50,
+              "area6DetectionsEnabled": [
+                "area6EntranceDetectionEnabled",
+                "area6ExitDetectionEnabled",
+                "area6AppearanceDetectionEnabled",
+                "area6DisappearanceDetectionEnabled",
+                "area6LoiteringDetectionEnabled",
+                "area6CrossingEnabled"
+              ],
+              "area6LoiteringDetectionDuration": 10,
+              "area6Polygon": {
+                "figure": null
+              },
+              "area7DetectionSensitivity": 50,
+              "area7DetectionsEnabled": [
+                "area7EntranceDetectionEnabled",
+                "area7ExitDetectionEnabled",
+                "area7AppearanceDetectionEnabled",
+                "area7DisappearanceDetectionEnabled",
+                "area7LoiteringDetectionEnabled",
+                "area7CrossingEnabled"
+              ],
+              "area7LoiteringDetectionDuration": 10,
+              "area7Polygon": {
+                "figure": null
+              },
+              "area8DetectionSensitivity": 50,
+              "area8DetectionsEnabled": [
+                "area8EntranceDetectionEnabled",
+                "area8ExitDetectionEnabled",
+                "area8AppearanceDetectionEnabled",
+                "area8DisappearanceDetectionEnabled",
+                "area8LoiteringDetectionEnabled",
+                "area8CrossingEnabled"
+              ],
+              "area8LoiteringDetectionDuration": 10,
+              "area8Polygon": {
+                "figure": null
+              },
+              "area9DetectionSensitivity": 50,
+              "area9DetectionsEnabled": [
+                "area9EntranceDetectionEnabled",
+                "area9ExitDetectionEnabled",
+                "area9AppearanceDetectionEnabled",
+                "area9DisappearanceDetectionEnabled",
+                "area9LoiteringDetectionEnabled",
+                "area9CrossingEnabled"
+              ],
+              "area9LoiteringDetectionDuration": 10,
+              "area9Polygon": {
+                "figure": null
+              },
+              "detectionFrequencyFps": 5,
+              "line10Polyline": {
+                "figure": null
+              },
+              "line1Polyline": {
+                "figure": {
+                  "color": "#ffff00",
+                  "direction": "absent",
+                  "points": [
+                    [
+                      0.8558823529411764,
+                      0.3558823529411765
+                    ],
+                    [
+                      0.8558823529411764,
+                      0.6882352941176471
+                    ]
+                  ]
+                },
+                "showOnCamera": true
+              },
+              "line2Polyline": {
+                "figure": null
+              },
+              "line3Polyline": {
+                "figure": null
+              },
+              "line4Polyline": {
+                "figure": null
+              },
+              "line5Polyline": {
+                "figure": null
+              },
+              "line6Polyline": {
+                "figure": null
+              },
+              "line7Polyline": {
+                "figure": null
+              },
+              "line8Polyline": {
+                "figure": null
+              },
+              "line9Polyline": {
+                "figure": null
+              },
+              "minDetectionConfidence": 75,
+              "minIntervalBetweenTracks": 5,
+              "threadCount": 4
+            }
+          },
+          {
+            "key": "{e6cd6b79-4916-2b83-75e3-5e4fb87a34f5}"
+          }
+        ],
+        "driverClass": "nx::vms::server::plugins::onvif::Resource",
+        "firmware": "9.00.0210",
+        "hasDualStreaming": 1,
+        "ioSettings": [
+          {
+            "iDefaultState": "Open Circuit",
+            "id": "Output_1",
+            "oDefaultState": "Open Circuit",
+            "outputName": "Output Output_1",
+            "portType": "Output",
+            "supportedPortTypes": "Unknown"
+          },
+          {
+            "iDefaultState": "Open Circuit",
+            "id": "1",
+            "inputName": "Input 1",
+            "oDefaultState": "Open Circuit",
+            "portType": "Input",
+            "supportedPortTypes": "Unknown"
+          }
+        ],
+        "isAudioSupported": 1,
+        "keepCameraTimeSettings": 1,
+        "mediaCapabilities": {
+          "streamCapabilities": [
+            {
+              "key": "primary",
+              "value": {
+                "defaultFps": 30,
+                "maxBitrateKbps": 19996,
+                "maxFps": 30,
+                "minBitrateKbps": 192
+              }
+            },
+            {
+              "key": "secondary",
+              "value": {
+                "defaultFps": 30,
+                "maxBitrateKbps": 1531,
+                "maxFps": 30,
+                "minBitrateKbps": 192
+              }
+            }
+          ]
+        },
+        "mediaStreams": {
+          "streams": [
+            {
+              "codec": 27,
+              "resolution": "3008x3008",
+              "transports": [
+                "rtsp",
+                "hls"
+              ]
+            },
+            {
+              "codec": 27,
+              "encoderIndex": 1,
+              "resolution": "480x480",
+              "transports": [
+                "rtsp",
+                "hls"
+              ]
+            },
+            {
+              "encoderIndex": -1,
+              "resolution": "*",
+              "transcodingRequired": true,
+              "transports": [
+                "rtsp",
+                "mjpeg",
+                "webm"
+              ]
+            }
+          ]
+        },
+        "motionStream": "secondary",
+        "streamUrls": {
+          "1": "rtsp://10.13.10.60/rtsp_tunnel?p=0&line=1&inst=1&aon=1&aud=1&vcd=2",
+          "2": "rtsp://10.13.10.60/rtsp_tunnel?p=1&line=1&inst=2&aon=1&aud=1&vcd=2"
+        },
+        "useMedia2ToFetchProfiles": "autoSelect",
+        "userEnabledAnalyticsEngines": [
+          "{9537fc21-e0b1-3ca8-424f-385cf4e9a45a}"
+        ]
+      },
+      "physicalId": "urn_uuid_00075fdd-ffc7-c7ff-dd5f-0700075fdd5f",
+      "schedule": {
+        "isEnabled": true,
+        "maxArchiveDays": -30,
+        "maxArchivePeriodS": -2592000,
+        "minArchiveDays": -1,
+        "minArchivePeriodS": -86400,
+        "tasks": [
+          {
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "high"
+          },
+          {
+            "dayOfWeek": 2,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "high"
+          },
+          {
+            "dayOfWeek": 3,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "high"
+          },
+          {
+            "dayOfWeek": 4,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "high"
+          },
+          {
+            "dayOfWeek": 5,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "high"
+          },
+          {
+            "dayOfWeek": 6,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "high"
+          },
+          {
+            "dayOfWeek": 7,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "high"
+          }
+        ]
+      },
+      "serverId": "{c143aa3f-a3b7-9731-e4b9-b6903536e995}",
+      "status": "Recording",
+      "typeId": "{9a55ee6b-a595-5807-a5ba-d4aff697dc12}",
+      "url": "https://10.13.10.60/onvif/device_service",
+      "vendor": "Bosch"
+    },
+    {
+      "capabilities": "inputPort|outputPort|audioTransmit|remoteArchive|customMediaPorts|absoluteTimestamps|multicastStreaming|isOnvif",
+      "credentials": {
+        "password": "js@152604",
+        "user": "root"
+      },
+      "deviceType": "Camera",
+      "id": "{2ec2b833-532c-7642-5f59-aad5c5abdb0a}",
+      "mac": "00-02-D1-AB-F0-26",
+      "model": "IB9365-EHTV-V2",
+      "motion": {
+        "mask": "5,0,0,44,32",
+        "type": "software"
+      },
+      "name": "IB9365-EHTV-V2",
+      "options": {
+        "dewarpingParams": "{\"cameraProjection\":\"equidistant\",\"enabled\":false,\"fovRot\":0,\"hStretch\":1,\"radius\":0.5,\"sphereAlpha\":0,\"sphereBeta\":0,\"viewMode\":\"ceiling\",\"xCenter\":0.5,\"yCenter\":0.5}",
+        "isAudioEnabled": true,
+        "preferredServerId": "{8b5b8028-772c-498a-cea3-355c3f0fba7b}"
+      },
+      "parameters": {
+        "DeviceUrl": "http://10.13.10.21:80/onvif/device_service",
+        "audioCodec": "PCM",
+        "audioInputDeviceId": "{62282fd3-3198-9f7c-e421-499df04433e3}",
+        "availableProfiles": [
+          {
+            "name": "Max view",
+            "state": "none",
+            "token": "Profile200"
+          },
+          {
+            "name": "Recording",
+            "state": "none",
+            "token": "Profile201"
+          },
+          {
+            "name": "Live view",
+            "state": "none",
+            "token": "Profile202"
+          },
+          {
+            "name": "hdwitness_aS",
+            "state": "secondaryDefault",
+            "token": "Profile203"
+          },
+          {
+            "name": "hdwitness_aP",
+            "state": "primaryDefault",
+            "token": "Profile204"
+          }
+        ],
+        "bitrateInfos": {
+          "streams": [
+            {
+              "actualBitrate": 0.21685314178466797,
+              "actualFps": 15,
+              "avarageBitrateMbps": 0.4539642333984375,
+              "averageGopSize": 30.200000762939453,
+              "bitrateFactor": 1,
+              "encoderIndex": "primary",
+              "fps": 15,
+              "isConfigured": true,
+              "numberOfChannels": 1,
+              "rawSuggestedBitrate": 5.0478515625,
+              "resolution": "1920x1080",
+              "suggestedBitrate": 0.21685314178466797,
+              "timestamp": "2024-01-23T14:29:19Z"
+            },
+            {
+              "actualBitrate": 0.15097808837890625,
+              "actualFps": 7,
+              "avarageBitrateMbps": 0.16649627685546875,
+              "averageGopSize": 35.5,
+              "bitrateFactor": 1,
+              "encoderIndex": "secondary",
+              "fps": 7,
+              "isConfigured": true,
+              "numberOfChannels": 1,
+              "rawSuggestedBitrate": 0.505859375,
+              "resolution": "640x360",
+              "suggestedBitrate": 0.1875,
+              "timestamp": "2024-01-23T14:31:32Z"
+            }
+          ]
+        },
+        "compatibleAnalyticsEngines": [
+          "{177334ce-ee4d-9856-bde8-c212b8c5cd7d}"
+        ],
+        "deviceAgentManifests": [
+          {
+            "key": "{177334ce-ee4d-9856-bde8-c212b8c5cd7d}",
+            "value": {
+              "capabilities": "noCapabilities",
+              "deviceAgentSettingsModel": null,
+              "eventTypes": [
+                {
+                  "flags": "stateDependent",
+                  "id": "nx.vivotek.Crowd",
+                  "name": "Crowd detection"
+                },
+                {
+                  "flags": "stateDependent",
+                  "id": "nx.vivotek.Loitering",
+                  "name": "Loitering detection"
+                },
+                {
+                  "id": "nx.vivotek.Intrusion",
+                  "name": "Intrusion detection"
+                },
+                {
+                  "id": "nx.vivotek.LineCrossing",
+                  "name": "Line crossing"
+                },
+                {
+                  "flags": "stateDependent",
+                  "id": "nx.vivotek.MissingObject",
+                  "name": "Missing object"
+                },
+                {
+                  "flags": "stateDependent",
+                  "id": "nx.vivotek.UnattendedObject",
+                  "name": "Unattended object"
+                },
+                {
+                  "flags": "stateDependent",
+                  "id": "nx.vivotek.Face",
+                  "name": "Face detection"
+                },
+                {
+                  "flags": "stateDependent",
+                  "id": "nx.vivotek.Running",
+                  "name": "Running detection"
+                }
+              ],
+              "supportedTypes": [
+                {
+                  "eventTypeId": "nx.vivotek.Crowd"
+                },
+                {
+                  "eventTypeId": "nx.vivotek.Loitering"
+                },
+                {
+                  "eventTypeId": "nx.vivotek.Intrusion"
+                },
+                {
+                  "eventTypeId": "nx.vivotek.LineCrossing"
+                },
+                {
+                  "eventTypeId": "nx.vivotek.MissingObject"
+                },
+                {
+                  "eventTypeId": "nx.vivotek.UnattendedObject"
+                },
+                {
+                  "eventTypeId": "nx.vivotek.Face"
+                },
+                {
+                  "eventTypeId": "nx.vivotek.Running"
+                },
+                {
+                  "objectTypeId": "nx.vivotek.Face"
+                },
+                {
+                  "objectTypeId": "nx.vivotek.Human"
+                },
+                {
+                  "objectTypeId": "nx.vivotek.MissingObject"
+                },
+                {
+                  "objectTypeId": "nx.vivotek.UnattendedObject"
+                }
+              ],
+              "typeLibrary": {
+                "objectTypes": [
+                  {
+                    "base": "nx.base.Person",
+                    "flags": "hiddenDerivedType",
+                    "id": "nx.vivotek.Human"
+                  },
+                  {
+                    "base": "nx.base.Face",
+                    "flags": "hiddenDerivedType",
+                    "id": "nx.vivotek.Face"
+                  },
+                  {
+                    "base": "nx.base.Unknown",
+                    "icon": "bytedance.iconpark.ghost",
+                    "id": "nx.vivotek.MissingObject",
+                    "name": "Missing object"
+                  },
+                  {
+                    "base": "nx.base.Unknown",
+                    "icon": "bytedance.iconpark.thinking-problem",
+                    "id": "nx.vivotek.UnattendedObject",
+                    "name": "Unattended object"
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "deviceAgentsSettingsValuesProperty": [
+          {
+            "key": "{177334ce-ee4d-9856-bde8-c212b8c5cd7d}",
+            "value": {
+              "Vca.CrowdDetection1.MinPersonCount": 2,
+              "Vca.CrowdDetection1.Region": {
+                "figure": null
+              },
+              "Vca.CrowdDetection2.MinPersonCount": 2,
+              "Vca.CrowdDetection2.Region": {
+                "figure": null
+              },
+              "Vca.CrowdDetection3.MinPersonCount": 2,
+              "Vca.CrowdDetection3.Region": {
+                "figure": null
+              },
+              "Vca.CrowdDetection4.MinPersonCount": 2,
+              "Vca.CrowdDetection4.Region": {
+                "figure": null
+              },
+              "Vca.CrowdDetection5.MinPersonCount": 2,
+              "Vca.CrowdDetection5.Region": {
+                "figure": null
+              },
+              "Vca.FaceDetection1.Region": {
+                "figure": {
+                  "color": "#ffff00",
+                  "points": [
+                    [
+                      0.24330000579357147,
+                      0.3199999928474426
+                    ],
+                    [
+                      0.4449999928474426,
+                      0.8919000029563904
+                    ],
+                    [
+                      0.8633000254631042,
+                      0.527400016784668
+                    ],
+                    [
+                      0.516700029373169,
+                      0.21330000460147858
+                    ],
+                    [
+                      0.24330000579357147,
+                      0.3199999928474426
+                    ]
+                  ]
+                },
+                "label": "Rule-3",
+                "showOnCamera": true
+              },
+              "Vca.FaceDetection2.Region": {
+                "figure": null
+              },
+              "Vca.FaceDetection3.Region": {
+                "figure": null
+              },
+              "Vca.FaceDetection4.Region": {
+                "figure": null
+              },
+              "Vca.FaceDetection5.Region": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion1": {
+                "figure": {
+                  "color": "#b2ff59",
+                  "points": [
+                    [
+                      0.19499999284744263,
+                      0.11851851642131805
+                    ],
+                    [
+                      0.2933333218097687,
+                      0.08888889104127884
+                    ],
+                    [
+                      0.8849999904632568,
+                      0.5481481552124023
+                    ],
+                    [
+                      0.4516666531562805,
+                      0.9125925898551941
+                    ]
+                  ]
+                },
+                "showOnCamera": true
+              },
+              "Vca.Installation.ExcludedRegion10": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion11": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion12": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion13": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion14": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion15": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion16": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion17": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion18": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion19": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion2": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion20": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion21": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion22": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion23": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion24": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion25": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion26": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion27": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion28": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion29": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion3": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion30": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion31": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion32": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion33": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion34": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion35": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion36": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion37": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion38": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion39": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion4": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion40": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion41": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion42": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion43": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion44": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion45": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion46": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion47": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion48": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion49": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion5": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion50": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion6": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion7": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion8": {
+                "figure": null
+              },
+              "Vca.Installation.ExcludedRegion9": {
+                "figure": null
+              },
+              "Vca.Installation.Height": 273,
+              "Vca.Installation.OrientationAutoConf": "true",
+              "Vca.Installation.OrientationAutoConfSupported": true,
+              "Vca.Installation.TiltAngle": 65,
+              "Vca.IntrusionDetection1.Direction": "OutToIn",
+              "Vca.IntrusionDetection1.Region": {
+                "figure": null
+              },
+              "Vca.IntrusionDetection2.Direction": "OutToIn",
+              "Vca.IntrusionDetection2.Region": {
+                "figure": null
+              },
+              "Vca.IntrusionDetection3.Direction": "OutToIn",
+              "Vca.IntrusionDetection3.Region": {
+                "figure": null
+              },
+              "Vca.IntrusionDetection4.Direction": "OutToIn",
+              "Vca.IntrusionDetection4.Region": {
+                "figure": null
+              },
+              "Vca.IntrusionDetection5.Direction": "OutToIn",
+              "Vca.IntrusionDetection5.Region": {
+                "figure": null
+              },
+              "Vca.LineCrossingDetection1.Line": {
+                "figure": {
+                  "color": "#e040fb",
+                  "direction": "absent",
+                  "points": [
+                    [
+                      0.3183000087738037,
+                      0.49480000138282776
+                    ],
+                    [
+                      0.5083000063896179,
+                      0.4296000003814697
+                    ],
+                    [
+                      0.67330002784729,
+                      0.37630000710487366
+                    ]
+                  ]
+                },
+                "label": "Rule-2",
+                "showOnCamera": true
+              },
+              "Vca.LineCrossingDetection2.Line": {
+                "figure": null
+              },
+              "Vca.LineCrossingDetection3.Line": {
+                "figure": null
+              },
+              "Vca.LineCrossingDetection4.Line": {
+                "figure": null
+              },
+              "Vca.LineCrossingDetection5.Line": {
+                "figure": null
+              },
+              "Vca.LoiteringDetection1.MinDuration": 5,
+              "Vca.LoiteringDetection1.Region": {
+                "figure": {
+                  "color": "#536dfe",
+                  "points": [
+                    [
+                      0.2662999927997589,
+                      0.1266999989748001
+                    ],
+                    [
+                      0.23639999330043793,
+                      0.1298999935388565
+                    ],
+                    [
+                      0.20829999446868896,
+                      0.13760000467300415
+                    ],
+                    [
+                      0.4837999939918518,
+                      0.9915000200271606
+                    ],
+                    [
+                      0.8650000095367432,
+                      0.5156000256538391
+                    ],
+                    [
+                      0.32179999351501465,
+                      0.12160000205039978
+                    ],
+                    [
+                      0.31279999017715454,
+                      0.12160000205039978
+                    ],
+                    [
+                      0.3122999966144562,
+                      0.1216999962925911
+                    ],
+                    [
+                      0.2662999927997589,
+                      0.1266999989748001
+                    ]
+                  ]
+                },
+                "label": "Rule-1",
+                "showOnCamera": true
+              },
+              "Vca.LoiteringDetection2.MinDuration": 5,
+              "Vca.LoiteringDetection2.Region": {
+                "figure": null
+              },
+              "Vca.LoiteringDetection3.MinDuration": 5,
+              "Vca.LoiteringDetection3.Region": {
+                "figure": null
+              },
+              "Vca.LoiteringDetection4.MinDuration": 5,
+              "Vca.LoiteringDetection4.Region": {
+                "figure": null
+              },
+              "Vca.LoiteringDetection5.MinDuration": 5,
+              "Vca.LoiteringDetection5.Region": {
+                "figure": null
+              },
+              "Vca.MissingObjectDetection1.MinDuration": 300,
+              "Vca.MissingObjectDetection1.Region": {
+                "figure": null
+              },
+              "Vca.MissingObjectDetection1.SizeConstraints": {
+                "maximum": [
+                  1,
+                  1
+                ],
+                "minimum": [
+                  0,
+                  0
+                ],
+                "positions": [
+                  [
+                    0.5,
+                    0.5
+                  ],
+                  [
+                    0,
+                    0
+                  ]
+                ]
+              },
+              "Vca.MissingObjectDetection2.MinDuration": 300,
+              "Vca.MissingObjectDetection2.Region": {
+                "figure": null
+              },
+              "Vca.MissingObjectDetection2.SizeConstraints": {
+                "maximum": [
+                  1,
+                  1
+                ],
+                "minimum": [
+                  0,
+                  0
+                ],
+                "positions": [
+                  [
+                    0.5,
+                    0.5
+                  ],
+                  [
+                    0,
+                    0
+                  ]
+                ]
+              },
+              "Vca.MissingObjectDetection3.MinDuration": 300,
+              "Vca.MissingObjectDetection3.Region": {
+                "figure": null
+              },
+              "Vca.MissingObjectDetection3.SizeConstraints": {
+                "maximum": [
+                  1,
+                  1
+                ],
+                "minimum": [
+                  0,
+                  0
+                ],
+                "positions": [
+                  [
+                    0.5,
+                    0.5
+                  ],
+                  [
+                    0,
+                    0
+                  ]
+                ]
+              },
+              "Vca.MissingObjectDetection4.MinDuration": 300,
+              "Vca.MissingObjectDetection4.Region": {
+                "figure": null
+              },
+              "Vca.MissingObjectDetection4.SizeConstraints": {
+                "maximum": [
+                  1,
+                  1
+                ],
+                "minimum": [
+                  0,
+                  0
+                ],
+                "positions": [
+                  [
+                    0.5,
+                    0.5
+                  ],
+                  [
+                    0,
+                    0
+                  ]
+                ]
+              },
+              "Vca.MissingObjectDetection5.MinDuration": 300,
+              "Vca.MissingObjectDetection5.Region": {
+                "figure": null
+              },
+              "Vca.MissingObjectDetection5.SizeConstraints": {
+                "maximum": [
+                  1,
+                  1
+                ],
+                "minimum": [
+                  0,
+                  0
+                ],
+                "positions": [
+                  [
+                    0.5,
+                    0.5
+                  ],
+                  [
+                    0,
+                    0
+                  ]
+                ]
+              },
+              "Vca.RunningDetection1.MaxMergeInterval": 1,
+              "Vca.RunningDetection1.MinDuration": 1,
+              "Vca.RunningDetection1.MinPersonCount": 1,
+              "Vca.RunningDetection1.MinSpeed": 3,
+              "Vca.RunningDetection2.MaxMergeInterval": 1,
+              "Vca.RunningDetection2.MinDuration": 1,
+              "Vca.RunningDetection2.MinPersonCount": 1,
+              "Vca.RunningDetection2.MinSpeed": 3,
+              "Vca.RunningDetection3.MaxMergeInterval": 1,
+              "Vca.RunningDetection3.MinDuration": 1,
+              "Vca.RunningDetection3.MinPersonCount": 1,
+              "Vca.RunningDetection3.MinSpeed": 3,
+              "Vca.RunningDetection4.MaxMergeInterval": 1,
+              "Vca.RunningDetection4.MinDuration": 1,
+              "Vca.RunningDetection4.MinPersonCount": 1,
+              "Vca.RunningDetection4.MinSpeed": 3,
+              "Vca.RunningDetection5.MaxMergeInterval": 1,
+              "Vca.RunningDetection5.MinDuration": 1,
+              "Vca.RunningDetection5.MinPersonCount": 1,
+              "Vca.RunningDetection5.MinSpeed": 3,
+              "Vca.Sensitivity": 5,
+              "Vca.UnattendedObjectDetection1.MinDuration": 300,
+              "Vca.UnattendedObjectDetection1.Region": {
+                "figure": null
+              },
+              "Vca.UnattendedObjectDetection1.SizeConstraints": {
+                "maximum": [
+                  1,
+                  1
+                ],
+                "minimum": [
+                  0,
+                  0
+                ],
+                "positions": [
+                  [
+                    0.5,
+                    0.5
+                  ],
+                  [
+                    0,
+                    0
+                  ]
+                ]
+              },
+              "Vca.UnattendedObjectDetection2.MinDuration": 300,
+              "Vca.UnattendedObjectDetection2.Region": {
+                "figure": null
+              },
+              "Vca.UnattendedObjectDetection2.SizeConstraints": {
+                "maximum": [
+                  1,
+                  1
+                ],
+                "minimum": [
+                  0,
+                  0
+                ],
+                "positions": [
+                  [
+                    0.5,
+                    0.5
+                  ],
+                  [
+                    0,
+                    0
+                  ]
+                ]
+              },
+              "Vca.UnattendedObjectDetection3.MinDuration": 300,
+              "Vca.UnattendedObjectDetection3.Region": {
+                "figure": null
+              },
+              "Vca.UnattendedObjectDetection3.SizeConstraints": {
+                "maximum": [
+                  1,
+                  1
+                ],
+                "minimum": [
+                  0,
+                  0
+                ],
+                "positions": [
+                  [
+                    0.5,
+                    0.5
+                  ],
+                  [
+                    0,
+                    0
+                  ]
+                ]
+              },
+              "Vca.UnattendedObjectDetection4.MinDuration": 300,
+              "Vca.UnattendedObjectDetection4.Region": {
+                "figure": null
+              },
+              "Vca.UnattendedObjectDetection4.SizeConstraints": {
+                "maximum": [
+                  1,
+                  1
+                ],
+                "minimum": [
+                  0,
+                  0
+                ],
+                "positions": [
+                  [
+                    0.5,
+                    0.5
+                  ],
+                  [
+                    0,
+                    0
+                  ]
+                ]
+              },
+              "Vca.UnattendedObjectDetection5.MinDuration": 300,
+              "Vca.UnattendedObjectDetection5.Region": {
+                "figure": null
+              },
+              "Vca.UnattendedObjectDetection5.SizeConstraints": {
+                "maximum": [
+                  1,
+                  1
+                ],
+                "minimum": [
+                  0,
+                  0
+                ],
+                "positions": [
+                  [
+                    0.5,
+                    0.5
+                  ],
+                  [
+                    0,
+                    0
+                  ]
+                ]
+              }
+            }
+          }
+        ],
+        "driverClass": "nx::vms::server::plugins::VivotekResource",
+        "firmware": "1.2301.37.01",
+        "hasDualStreaming": 1,
+        "ioSettings": [
+          {
+            "iDefaultState": "Open Circuit",
+            "id": "RelayOutput1",
+            "oDefaultState": "Open Circuit",
+            "outputName": "Output RelayOutput1",
+            "portType": "Output",
+            "supportedPortTypes": "Unknown"
+          },
+          {
+            "iDefaultState": "Open Circuit",
+            "id": "RelayOutput2",
+            "oDefaultState": "Open Circuit",
+            "outputName": "Output RelayOutput2",
+            "portType": "Output",
+            "supportedPortTypes": "Unknown"
+          },
+          {
+            "iDefaultState": "Open Circuit",
+            "id": "RelayOutput3",
+            "oDefaultState": "Open Circuit",
+            "outputName": "Output RelayOutput3",
+            "portType": "Output",
+            "supportedPortTypes": "Unknown"
+          },
+          {
+            "iDefaultState": "Open Circuit",
+            "id": "1",
+            "inputName": "Input 1",
+            "oDefaultState": "Open Circuit",
+            "portType": "Input",
+            "supportedPortTypes": "Unknown"
+          },
+          {
+            "iDefaultState": "Open Circuit",
+            "id": "2",
+            "inputName": "Input 2",
+            "oDefaultState": "Open Circuit",
+            "portType": "Input",
+            "supportedPortTypes": "Unknown"
+          },
+          {
+            "iDefaultState": "Open Circuit",
+            "id": "3",
+            "inputName": "Input 3",
+            "oDefaultState": "Open Circuit",
+            "portType": "Input",
+            "supportedPortTypes": "Unknown"
+          }
+        ],
+        "isAudioSupported": 1,
+        "keepCameraTimeSettings": 1,
+        "mediaCapabilities": {
+          "streamCapabilities": [
+            {
+              "key": "primary",
+              "value": {
+                "maxBitrateKbps": 5704,
+                "maxFps": 30,
+                "minBitrateKbps": 192
+              }
+            },
+            {
+              "key": "secondary",
+              "value": {
+                "maxBitrateKbps": 2450,
+                "maxFps": 60,
+                "minBitrateKbps": 192
+              }
+            }
+          ]
+        },
+        "mediaStreams": {
+          "streams": [
+            {
+              "codec": 173,
+              "resolution": "1920x1080",
+              "transports": [
+                "rtsp"
+              ]
+            },
+            {
+              "codec": 173,
+              "encoderIndex": 1,
+              "resolution": "640x360",
+              "transports": [
+                "rtsp"
+              ]
+            },
+            {
+              "encoderIndex": -1,
+              "resolution": "*",
+              "transcodingRequired": true,
+              "transports": [
+                "rtsp",
+                "mjpeg",
+                "webm"
+              ]
+            }
+          ]
+        },
+        "motionStream": "secondary",
+        "streamUrls": {
+          "1": "rtsp://10.13.10.21:554/media2/stream.sdp?profile=Profile204",
+          "2": "rtsp://10.13.10.21:554/media2/stream.sdp?profile=Profile203"
+        },
+        "useMedia2ToFetchProfiles": "autoSelect"
+      },
+      "physicalId": "urn_uuid_28cc2ffe-3dde-c457-1322-42165d7b01c7",
+      "schedule": {
+        "maxArchiveDays": -30,
+        "maxArchivePeriodS": -2592000,
+        "minArchiveDays": -1,
+        "minArchivePeriodS": -86400,
+        "tasks": [
+          {
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "normal"
+          },
+          {
+            "dayOfWeek": 2,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "normal"
+          },
+          {
+            "dayOfWeek": 3,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "normal"
+          },
+          {
+            "dayOfWeek": 4,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "normal"
+          },
+          {
+            "dayOfWeek": 5,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "normal"
+          },
+          {
+            "dayOfWeek": 6,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "normal"
+          },
+          {
+            "dayOfWeek": 7,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "normal"
+          }
+        ]
+      },
+      "serverId": "{bff87b4b-632f-96cc-f6bb-1f51fb095d95}",
+      "typeId": "{9a55ee6b-a595-5807-a5ba-d4aff697dc12}",
+      "url": "http://10.13.10.21:80/onvif/device_service",
+      "vendor": "VIVOTEK"
+    },
+    {
+      "capabilities": "remoteArchive|customMediaPorts|absoluteTimestamps|multicastStreaming|isOnvif",
+      "credentials": {
+        "password": "js@152604",
+        "user": "admin"
+      },
+      "deviceType": "Camera",
+      "id": "{62282fd3-3198-9f7c-e421-499df04433e3}",
+      "isLicenseUsed": true,
+      "mac": "00-0F-7C-18-9D-29",
+      "model": "Z39",
+      "motion": {
+        "mask": "5,0,0,44,32",
+        "type": "software"
+      },
+      "name": "Z39",
+      "options": {
+        "dewarpingParams": "{\"cameraProjection\":\"equidistant\",\"enabled\":false,\"fovRot\":0,\"hStretch\":1,\"radius\":0.5,\"sphereAlpha\":0,\"sphereBeta\":0,\"viewMode\":\"ceiling\",\"xCenter\":0.5,\"yCenter\":0.5}",
+        "isAudioEnabled": true,
+        "preferredServerId": "{c143aa3f-a3b7-9731-e4b9-b6903536e995}"
+      },
+      "parameters": {
+        "DeviceUrl": "http://10.13.10.44:80/onvif/device_service",
+        "audioCodec": "PCM",
+        "availableProfiles": [
+          {
+            "name": "media_profile1",
+            "state": "primaryDefault",
+            "token": "media_profile1"
+          },
+          {
+            "name": "media_profile2",
+            "state": "secondaryDefault",
+            "token": "media_profile2"
+          }
+        ],
+        "bitrateInfos": {
+          "streams": [
+            {
+              "actualBitrate": 0.4352731704711914,
+              "actualFps": 14.969057083129883,
+              "avarageBitrateMbps": 0.766693115234375,
+              "averageGopSize": 25,
+              "bitrateFactor": 1,
+              "encoderIndex": "primary",
+              "fps": 14,
+              "isConfigured": true,
+              "numberOfChannels": 1,
+              "rawSuggestedBitrate": 7.57421875,
+              "resolution": "2688x1520",
+              "suggestedBitrate": 0.4352731704711914,
+              "timestamp": "2024-03-21T14:39:11Z"
+            },
+            {
+              "actualBitrate": 0.06611061096191406,
+              "actualFps": 7.00970983505249,
+              "avarageBitrateMbps": 0.16738128662109375,
+              "averageGopSize": 23.66666603088379,
+              "bitrateFactor": 1,
+              "encoderIndex": "secondary",
+              "fps": 7,
+              "isConfigured": true,
+              "numberOfChannels": 1,
+              "rawSuggestedBitrate": 0.505859375,
+              "resolution": "640x360",
+              "suggestedBitrate": 0.1875,
+              "timestamp": "2024-03-26T14:32:35Z"
+            }
+          ]
+        },
+        "compatibleAnalyticsEngines": [
+          "{9537fc21-e0b1-3ca8-424f-385cf4e9a45a}"
+        ],
+        "deviceAgentManifests": [
+          {
+            "key": "{9537fc21-e0b1-3ca8-424f-385cf4e9a45a}",
+            "value": {
+              "capabilities": "noCapabilities",
+              "deviceAgentSettingsModel": null,
+              "eventTypes": [
+                {
+                  "id": "nx.openvino_object_detection.personDetected",
+                  "name": "Person Detected"
+                },
+                {
+                  "id": "nx.openvino_object_detection.personLost",
+                  "name": "Person Lost"
+                },
+                {
+                  "flags": "stateDependent",
+                  "id": "nx.openvino_object_detection.peopleDetected",
+                  "name": "People Detected"
+                },
+                {
+                  "id": "nx.openvino_object_detection.lineCrossed",
+                  "name": "Line Crossed"
+                },
+                {
+                  "id": "nx.openvino_object_detection.areaCrossed",
+                  "name": "Area Crossed"
+                },
+                {
+                  "id": "nx.openvino_object_detection.areaEntranceDetected",
+                  "name": "Area Entrance"
+                },
+                {
+                  "id": "nx.openvino_object_detection.areaExitDetected",
+                  "name": "Area Exit"
+                },
+                {
+                  "id": "nx.openvino_object_detection.appearanceInAreaDetected",
+                  "name": "Appearance in Area"
+                },
+                {
+                  "id": "nx.openvino_object_detection.disappearanceInAreaDetected",
+                  "name": "Disappearance in Area"
+                },
+                {
+                  "flags": "stateDependent",
+                  "id": "nx.openvino_object_detection.loiteringDetected",
+                  "name": "Loitering"
+                }
+              ],
+              "objectTypes": [
+                {
+                  "id": "nx.openvino_object_detection.person",
+                  "name": "Person"
+                }
+              ]
+            }
+          }
+        ],
+        "deviceAgentsSettingsValuesProperty": [
+          {
+            "key": "{9537fc21-e0b1-3ca8-424f-385cf4e9a45a}",
+            "value": {
+              "area10DetectionSensitivity": 50,
+              "area10DetectionsEnabled": [
+                "area10EntranceDetectionEnabled",
+                "area10ExitDetectionEnabled",
+                "area10AppearanceDetectionEnabled",
+                "area10DisappearanceDetectionEnabled",
+                "area10LoiteringDetectionEnabled",
+                "area10CrossingEnabled"
+              ],
+              "area10LoiteringDetectionDuration": 10,
+              "area10Polygon": {
+                "figure": null
+              },
+              "area1DetectionSensitivity": 50,
+              "area1DetectionsEnabled": [
+                "area1EntranceDetectionEnabled",
+                "area1ExitDetectionEnabled",
+                "area1AppearanceDetectionEnabled",
+                "area1DisappearanceDetectionEnabled",
+                "area1LoiteringDetectionEnabled",
+                "area1CrossingEnabled"
+              ],
+              "area1LoiteringDetectionDuration": 10,
+              "area1Polygon": {
+                "figure": {
+                  "color": "#e040fb",
+                  "points": [
+                    [
+                      0.07,
+                      0.08547368421052631
+                    ],
+                    [
+                      0.11833333333333333,
+                      0.5658947368421052
+                    ],
+                    [
+                      0.22,
+                      0.5010526315789473
+                    ],
+                    [
+                      0.195,
+                      0.056
+                    ]
+                  ]
+                },
+                "showOnCamera": true
+              },
+              "area2DetectionSensitivity": 50,
+              "area2DetectionsEnabled": [
+                "area2EntranceDetectionEnabled",
+                "area2ExitDetectionEnabled",
+                "area2AppearanceDetectionEnabled",
+                "area2DisappearanceDetectionEnabled",
+                "area2LoiteringDetectionEnabled",
+                "area2CrossingEnabled"
+              ],
+              "area2LoiteringDetectionDuration": 10,
+              "area2Polygon": {
+                "figure": null
+              },
+              "area3DetectionSensitivity": 50,
+              "area3DetectionsEnabled": [
+                "area3EntranceDetectionEnabled",
+                "area3ExitDetectionEnabled",
+                "area3AppearanceDetectionEnabled",
+                "area3DisappearanceDetectionEnabled",
+                "area3LoiteringDetectionEnabled",
+                "area3CrossingEnabled"
+              ],
+              "area3LoiteringDetectionDuration": 10,
+              "area3Polygon": {
+                "figure": null
+              },
+              "area4DetectionSensitivity": 50,
+              "area4DetectionsEnabled": [
+                "area4EntranceDetectionEnabled",
+                "area4ExitDetectionEnabled",
+                "area4AppearanceDetectionEnabled",
+                "area4DisappearanceDetectionEnabled",
+                "area4LoiteringDetectionEnabled",
+                "area4CrossingEnabled"
+              ],
+              "area4LoiteringDetectionDuration": 10,
+              "area4Polygon": {
+                "figure": null
+              },
+              "area5DetectionSensitivity": 50,
+              "area5DetectionsEnabled": [
+                "area5EntranceDetectionEnabled",
+                "area5ExitDetectionEnabled",
+                "area5AppearanceDetectionEnabled",
+                "area5DisappearanceDetectionEnabled",
+                "area5LoiteringDetectionEnabled",
+                "area5CrossingEnabled"
+              ],
+              "area5LoiteringDetectionDuration": 10,
+              "area5Polygon": {
+                "figure": null
+              },
+              "area6DetectionSensitivity": 50,
+              "area6DetectionsEnabled": [
+                "area6EntranceDetectionEnabled",
+                "area6ExitDetectionEnabled",
+                "area6AppearanceDetectionEnabled",
+                "area6DisappearanceDetectionEnabled",
+                "area6LoiteringDetectionEnabled",
+                "area6CrossingEnabled"
+              ],
+              "area6LoiteringDetectionDuration": 10,
+              "area6Polygon": {
+                "figure": null
+              },
+              "area7DetectionSensitivity": 50,
+              "area7DetectionsEnabled": [
+                "area7EntranceDetectionEnabled",
+                "area7ExitDetectionEnabled",
+                "area7AppearanceDetectionEnabled",
+                "area7DisappearanceDetectionEnabled",
+                "area7LoiteringDetectionEnabled",
+                "area7CrossingEnabled"
+              ],
+              "area7LoiteringDetectionDuration": 10,
+              "area7Polygon": {
+                "figure": null
+              },
+              "area8DetectionSensitivity": 50,
+              "area8DetectionsEnabled": [
+                "area8EntranceDetectionEnabled",
+                "area8ExitDetectionEnabled",
+                "area8AppearanceDetectionEnabled",
+                "area8DisappearanceDetectionEnabled",
+                "area8LoiteringDetectionEnabled",
+                "area8CrossingEnabled"
+              ],
+              "area8LoiteringDetectionDuration": 10,
+              "area8Polygon": {
+                "figure": null
+              },
+              "area9DetectionSensitivity": 50,
+              "area9DetectionsEnabled": [
+                "area9EntranceDetectionEnabled",
+                "area9ExitDetectionEnabled",
+                "area9AppearanceDetectionEnabled",
+                "area9DisappearanceDetectionEnabled",
+                "area9LoiteringDetectionEnabled",
+                "area9CrossingEnabled"
+              ],
+              "area9LoiteringDetectionDuration": 10,
+              "area9Polygon": {
+                "figure": null
+              },
+              "detectionFrequencyFps": 5,
+              "line10Polyline": {
+                "figure": null
+              },
+              "line1Polyline": {
+                "figure": null
+              },
+              "line2Polyline": {
+                "figure": null
+              },
+              "line3Polyline": {
+                "figure": null
+              },
+              "line4Polyline": {
+                "figure": null
+              },
+              "line5Polyline": {
+                "figure": null
+              },
+              "line6Polyline": {
+                "figure": null
+              },
+              "line7Polyline": {
+                "figure": null
+              },
+              "line8Polyline": {
+                "figure": null
+              },
+              "line9Polyline": {
+                "figure": null
+              },
+              "minDetectionConfidence": 75,
+              "minIntervalBetweenTracks": 5,
+              "threadCount": 4
+            }
+          }
+        ],
+        "driverClass": "nx::vms::server::plugins::onvif::Resource",
+        "firmware": "AC-Z016202.5.82.C05403.NB.220211",
+        "hasDualStreaming": 1,
+        "isAudioSupported": 1,
+        "keepCameraTimeSettings": 1,
+        "mediaCapabilities": {
+          "streamCapabilities": [
+            {
+              "key": "primary",
+              "value": {
+                "defaultFps": 25,
+                "maxBitrateKbps": 9552,
+                "maxFps": 25,
+                "minBitrateKbps": 192
+              }
+            },
+            {
+              "key": "secondary",
+              "value": {
+                "defaultFps": 25,
+                "maxBitrateKbps": 1276,
+                "maxFps": 25,
+                "minBitrateKbps": 192
+              }
+            }
+          ]
+        },
+        "mediaStreams": {
+          "streams": [
+            {
+              "codec": 27,
+              "resolution": "2688x1520",
+              "transports": [
+                "rtsp",
+                "hls"
+              ]
+            },
+            {
+              "codec": 27,
+              "encoderIndex": 1,
+              "resolution": "640x360",
+              "transports": [
+                "rtsp",
+                "hls"
+              ]
+            },
+            {
+              "encoderIndex": -1,
+              "resolution": "*",
+              "transcodingRequired": true,
+              "transports": [
+                "rtsp",
+                "mjpeg",
+                "webm"
+              ]
+            }
+          ]
+        },
+        "motionStream": "secondary",
+        "streamUrls": {
+          "1": "rtsp://10.13.10.44/media/video1",
+          "2": "rtsp://10.13.10.44/media/video2"
+        },
+        "useMedia2ToFetchProfiles": "autoSelect",
+        "userEnabledAnalyticsEngines": [
+          "{9537fc21-e0b1-3ca8-424f-385cf4e9a45a}"
+        ]
+      },
+      "physicalId": "00-0F-7C-18-9D-29",
+      "schedule": {
+        "isEnabled": true,
+        "maxArchiveDays": -30,
+        "maxArchivePeriodS": -2592000,
+        "minArchiveDays": -1,
+        "minArchivePeriodS": -86400,
+        "tasks": [
+          {
+            "bitrateKbps": 1538,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "low"
+          },
+          {
+            "bitrateKbps": 1538,
+            "dayOfWeek": 2,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "low"
+          },
+          {
+            "bitrateKbps": 1538,
+            "dayOfWeek": 3,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "low"
+          },
+          {
+            "bitrateKbps": 1538,
+            "dayOfWeek": 4,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "low"
+          },
+          {
+            "bitrateKbps": 1538,
+            "dayOfWeek": 5,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "low"
+          },
+          {
+            "bitrateKbps": 1538,
+            "dayOfWeek": 6,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "low"
+          },
+          {
+            "bitrateKbps": 1538,
+            "dayOfWeek": 7,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "low"
+          }
+        ]
+      },
+      "serverId": "{c143aa3f-a3b7-9731-e4b9-b6903536e995}",
+      "status": "Recording",
+      "typeId": "{9a55ee6b-a595-5807-a5ba-d4aff697dc12}",
+      "url": "http://10.13.10.44:80/onvif/device_service",
+      "vendor": "ACTi"
+    },
+    {
+      "capabilities": "customMediaPorts|absoluteTimestamps",
+      "credentials": {
+        "password": "js@152604",
+        "user": "root"
+      },
+      "deviceType": "Camera",
+      "id": "{6590a6eb-08fc-e600-3c63-66c4b0aa5fe7}",
+      "isLicenseUsed": true,
+      "mac": "B8-A4-4F-47-CA-58",
+      "model": "AXISM3085V",
+      "motion": {
+        "mask": "5,0,0,44,32",
+        "type": "software"
+      },
+      "name": "AXISM3085V",
+      "options": {
+        "dewarpingParams": "{\"cameraProjection\":\"equidistant\",\"enabled\":false,\"fovRot\":0,\"hStretch\":1,\"radius\":0.5,\"sphereAlpha\":0,\"sphereBeta\":0,\"viewMode\":\"ceiling\",\"xCenter\":0.5,\"yCenter\":0.5}",
+        "isControlEnabled": false,
+        "preferredServerId": "{c143aa3f-a3b7-9731-e4b9-b6903536e995}"
+      },
+      "parameters": {
+        "analyzedStreamIndexes": [
+          {
+            "key": "{cb4a4ec3-31e4-7fe7-ba2a-e3464b407edc}",
+            "value": "primary"
+          }
+        ],
+        "bitrateInfos": {
+          "streams": [
+            {
+              "actualBitrate": 0.5574750900268555,
+              "actualFps": 30.114017486572266,
+              "avarageBitrateMbps": -1,
+              "averageGopSize": 30,
+              "bitrateFactor": 1,
+              "encoderIndex": "primary",
+              "fps": 30,
+              "isConfigured": true,
+              "numberOfChannels": 1,
+              "rawSuggestedBitrate": 10.095703125,
+              "resolution": "1920x1080",
+              "suggestedBitrate": 0.5574750900268555,
+              "timestamp": "2024-03-14T01:50:07Z"
+            },
+            {
+              "actualBitrate": 0.1619577407836914,
+              "actualFps": 7.00707483291626,
+              "avarageBitrateMbps": -1,
+              "averageGopSize": 35.5,
+              "bitrateFactor": 1,
+              "encoderIndex": "secondary",
+              "fps": 7,
+              "isConfigured": true,
+              "numberOfChannels": 1,
+              "rawSuggestedBitrate": 0.505859375,
+              "resolution": "640x360",
+              "suggestedBitrate": 0.1875,
+              "timestamp": "2024-03-14T01:50:40Z"
+            }
+          ]
+        },
+        "compatibleAnalyticsEngines": [
+          "{cb4a4ec3-31e4-7fe7-ba2a-e3464b407edc}",
+          "{9537fc21-e0b1-3ca8-424f-385cf4e9a45a}"
+        ],
+        "deviceAgentManifests": [
+          {
+            "key": "{cb4a4ec3-31e4-7fe7-ba2a-e3464b407edc}",
+            "value": {
+              "capabilities": "noCapabilities",
+              "deviceAgentSettingsModel": null
+            }
+          }
+        ],
+        "deviceAgentsSettingsValuesProperty": [
+          {
+            "key": "{cb4a4ec3-31e4-7fe7-ba2a-e3464b407edc}"
+          },
+          {
+            "key": "{9537fc21-e0b1-3ca8-424f-385cf4e9a45a}",
+            "value": {
+              "area10DetectionSensitivity": 50,
+              "area10DetectionsEnabled": [
+                "area10EntranceDetectionEnabled",
+                "area10ExitDetectionEnabled",
+                "area10AppearanceDetectionEnabled",
+                "area10DisappearanceDetectionEnabled",
+                "area10LoiteringDetectionEnabled",
+                "area10CrossingEnabled"
+              ],
+              "area10LoiteringDetectionDuration": 10,
+              "area1DetectionSensitivity": 50,
+              "area1DetectionsEnabled": [
+                "area1EntranceDetectionEnabled",
+                "area1ExitDetectionEnabled",
+                "area1AppearanceDetectionEnabled",
+                "area1DisappearanceDetectionEnabled",
+                "area1LoiteringDetectionEnabled",
+                "area1CrossingEnabled"
+              ],
+              "area1LoiteringDetectionDuration": 10,
+              "area2DetectionSensitivity": 50,
+              "area2DetectionsEnabled": [
+                "area2EntranceDetectionEnabled",
+                "area2ExitDetectionEnabled",
+                "area2AppearanceDetectionEnabled",
+                "area2DisappearanceDetectionEnabled",
+                "area2LoiteringDetectionEnabled",
+                "area2CrossingEnabled"
+              ],
+              "area2LoiteringDetectionDuration": 10,
+              "area3DetectionSensitivity": 50,
+              "area3DetectionsEnabled": [
+                "area3EntranceDetectionEnabled",
+                "area3ExitDetectionEnabled",
+                "area3AppearanceDetectionEnabled",
+                "area3DisappearanceDetectionEnabled",
+                "area3LoiteringDetectionEnabled",
+                "area3CrossingEnabled"
+              ],
+              "area3LoiteringDetectionDuration": 10,
+              "area4DetectionSensitivity": 50,
+              "area4DetectionsEnabled": [
+                "area4EntranceDetectionEnabled",
+                "area4ExitDetectionEnabled",
+                "area4AppearanceDetectionEnabled",
+                "area4DisappearanceDetectionEnabled",
+                "area4LoiteringDetectionEnabled",
+                "area4CrossingEnabled"
+              ],
+              "area4LoiteringDetectionDuration": 10,
+              "area5DetectionSensitivity": 50,
+              "area5DetectionsEnabled": [
+                "area5EntranceDetectionEnabled",
+                "area5ExitDetectionEnabled",
+                "area5AppearanceDetectionEnabled",
+                "area5DisappearanceDetectionEnabled",
+                "area5LoiteringDetectionEnabled",
+                "area5CrossingEnabled"
+              ],
+              "area5LoiteringDetectionDuration": 10,
+              "area6DetectionSensitivity": 50,
+              "area6DetectionsEnabled": [
+                "area6EntranceDetectionEnabled",
+                "area6ExitDetectionEnabled",
+                "area6AppearanceDetectionEnabled",
+                "area6DisappearanceDetectionEnabled",
+                "area6LoiteringDetectionEnabled",
+                "area6CrossingEnabled"
+              ],
+              "area6LoiteringDetectionDuration": 10,
+              "area7DetectionSensitivity": 50,
+              "area7DetectionsEnabled": [
+                "area7EntranceDetectionEnabled",
+                "area7ExitDetectionEnabled",
+                "area7AppearanceDetectionEnabled",
+                "area7DisappearanceDetectionEnabled",
+                "area7LoiteringDetectionEnabled",
+                "area7CrossingEnabled"
+              ],
+              "area7LoiteringDetectionDuration": 10,
+              "area8DetectionSensitivity": 50,
+              "area8DetectionsEnabled": [
+                "area8EntranceDetectionEnabled",
+                "area8ExitDetectionEnabled",
+                "area8AppearanceDetectionEnabled",
+                "area8DisappearanceDetectionEnabled",
+                "area8LoiteringDetectionEnabled",
+                "area8CrossingEnabled"
+              ],
+              "area8LoiteringDetectionDuration": 10,
+              "area9DetectionSensitivity": 50,
+              "area9DetectionsEnabled": [
+                "area9EntranceDetectionEnabled",
+                "area9ExitDetectionEnabled",
+                "area9AppearanceDetectionEnabled",
+                "area9DisappearanceDetectionEnabled",
+                "area9LoiteringDetectionEnabled",
+                "area9CrossingEnabled"
+              ],
+              "area9LoiteringDetectionDuration": 10,
+              "detectionFrequencyFps": 5,
+              "minDetectionConfidence": 75,
+              "minIntervalBetweenTracks": 5,
+              "threadCount": 4
+            }
+          }
+        ],
+        "driverClass": "QnPlAxisResource",
+        "firmware": "11.5.64",
+        "keepCameraTimeSettings": 1,
+        "mediaCapabilities": {
+          "streamCapabilities": [
+            {
+              "key": "primary",
+              "value": {
+                "maxBitrateKbps": 5704,
+                "maxFps": 30,
+                "minBitrateKbps": 192
+              }
+            },
+            {
+              "key": "secondary",
+              "value": {
+                "maxBitrateKbps": 1225,
+                "maxFps": 30,
+                "minBitrateKbps": 192
+              }
+            }
+          ]
+        },
+        "mediaStreams": {
+          "streams": [
+            {
+              "codec": 173,
+              "encoderIndex": 1,
+              "resolution": "640x360",
+              "transports": [
+                "rtsp"
+              ]
+            },
+            {
+              "codec": 173,
+              "resolution": "1920x1080",
+              "transports": [
+                "rtsp"
+              ]
+            },
+            {
+              "encoderIndex": -1,
+              "resolution": "*",
+              "transcodingRequired": true,
+              "transports": [
+                "rtsp",
+                "mjpeg",
+                "webm"
+              ]
+            }
+          ]
+        },
+        "motionStream": "secondary",
+        "primaryStreamConfiguration": {
+          "bitrateKbps": 3921,
+          "codec": "H265",
+          "fps": 30,
+          "quality": "undefined",
+          "resolution": {
+            "height": 1080,
+            "width": 1920
+          }
+        },
+        "secondaryStreamConfiguration": {
+          "bitrateKbps": 197,
+          "codec": "H265",
+          "fps": 7,
+          "quality": "undefined",
+          "resolution": {
+            "height": 360,
+            "width": 640
+          }
+        },
+        "streamUrls": {
+          "1": "rtsp://10.13.10.53:554/axis-media/media.amp?event=on&streamprofile=hdwitness_all_cnPrimary",
+          "2": "rtsp://10.13.10.53:554/axis-media/media.amp?event=on&streamprofile=hdwitness_all_cnSecondary"
+        },
+        "useMedia2ToFetchProfiles": "autoSelect"
+      },
+      "physicalId": "B8-A4-4F-47-CA-58",
+      "schedule": {
+        "isEnabled": true,
+        "maxArchiveDays": -30,
+        "maxArchivePeriodS": -2592000,
+        "minArchiveDays": -1,
+        "minArchivePeriodS": -86400,
+        "tasks": [
+          {
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "normal"
+          },
+          {
+            "dayOfWeek": 2,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "normal"
+          },
+          {
+            "dayOfWeek": 3,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "normal"
+          },
+          {
+            "dayOfWeek": 4,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "normal"
+          },
+          {
+            "dayOfWeek": 5,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "normal"
+          },
+          {
+            "dayOfWeek": 6,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "normal"
+          },
+          {
+            "dayOfWeek": 7,
+            "endTime": 86400,
+            "fps": 15,
+            "streamQuality": "normal"
+          }
+        ]
+      },
+      "serverId": "{c143aa3f-a3b7-9731-e4b9-b6903536e995}",
+      "typeId": "{684b83bf-a029-2889-4fc9-e55096c96af9}",
+      "url": "http://10.13.10.53",
+      "vendor": "Axis"
+    },
+    {
+      "capabilities": "customMediaPorts|isOnvif",
+      "credentials": {
+        "password": "admin",
+        "user": "admin"
+      },
+      "deviceType": "Camera",
+      "id": "{d6dd50cc-cc38-04ab-0144-3e3f758949c1}",
+      "mac": "00-00-00-00-00-00",
+      "model": "R20V",
+      "name": "HD-IPCAM",
+      "parameters": {
+        "DeviceUrl": "http://10.13.10.101:80/onvif/device_service/",
+        "driverClass": "nx::vms::server::plugins::onvif::Resource",
+        "firmware": "20.207.2.5"
+      },
+      "physicalId": "urn_uuid_464A9558-9558-5242-4530-0c11050a6562",
+      "serverId": "{bff87b4b-632f-96cc-f6bb-1f51fb095d95}",
+      "typeId": "{9a55ee6b-a595-5807-a5ba-d4aff697dc12}",
+      "url": "http://10.13.10.101:80/onvif/device_service/",
+      "vendor": "IPPhone"
+    }
+  ]
