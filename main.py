@@ -5,7 +5,7 @@ import supervision as sv
 import argparse
 import cv2
 
-def detectionTest(video_name):
+def detectionTest(videoName):
         """
         車牌辨識(待完成...)
         """
@@ -13,7 +13,6 @@ def detectionTest(video_name):
         license_plate_detector = YOLO(AiModelPath.licensePlateDetector)
         txtPath = "./licensePlate.txt"
         tracker = sv.ByteTrack()
-
         boxAnnotator = sv.BoxAnnotator(
             thickness = 2,
             text_thickness = 2,
@@ -22,8 +21,7 @@ def detectionTest(video_name):
 
         # 定義感興趣的類別ID
         vehicles = [2, 3, 5, 7]
-
-        cam = cv2.VideoCapture(videoPath.videoPath + video_name)
+        cam = cv2.VideoCapture(videoPath.videoPath + videoName)
 
         while True:
             ret, frame = cam.read()
@@ -50,7 +48,6 @@ def detectionTest(video_name):
 
 if "__main__" == __name__:
     parser = argparse.ArgumentParser()
-    # parser.add_argument("model_path", help="path to the YOLO model")
-    parser.add_argument("video_name", help="path to the video file")
+    parser.add_argument("--videoName", help="path to the video file")
     args = parser.parse_args()
-    detectionTest(args.video_name)
+    detectionTest(args.videoName)
