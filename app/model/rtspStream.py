@@ -4,7 +4,6 @@ from app.config import AiModelPath
 from app.config import downloadVideoPath
 import supervision as sv
 import numpy as np
-import time
 import cv2
 import threading
 import pytesseract
